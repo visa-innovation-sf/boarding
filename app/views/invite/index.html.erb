@@ -42,7 +42,7 @@
       <% end %>
 
       <br />
-      <%= submit_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', id: "submit" %>
+      <%= button_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', data: { disable_with: "<i class='fa fa-spinner fa-spin'></i> " + t(:please_wait) }, id: "submit" %>
     <% end %>
   <% else %>
     <p class="alert alert-<%= @type %>">
